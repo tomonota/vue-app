@@ -1,0 +1,28 @@
+<div class="campaigns-component">
+  <div class="campaigns-header">
+    <h1>キャンペーン 一覧</h1>
+    <div class="campaign-search">
+      <campaign-search></campaign-search>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <th class="id-column">id</th>
+      <th class="name-column text-over">キャンペーン名</th>
+      <th class="imp-column">imp</th>
+      <th class="cv-column">cv</th>
+      <th class="status-column">ステータス</th>
+      <th class="date-column">開始日</th>
+      <th class="date-column">終了日</th>
+    </tr>
+    <tr v-for="campaign in campaigns">
+      <td class="id-column">{{campaign.id}}</td>
+      <td class="name-column text-over">{{campaign.name}}</td>
+      <td class="imp-column">{{campaign.imp.toLocaleString()}}</td>
+      <td class="cv-column">{{campaign.cv.toLocaleString()}}</td>
+      <td class="status-column">{{campaignStatusDisplay[campaign.status]}}</td>
+      <td class="date-column">{{campaign.startDate}}</td>
+      <td class="date-column">{{campaign.endDate}}</td>
+    </tr>
+  </table>
+</div>

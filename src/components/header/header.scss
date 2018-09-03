@@ -1,0 +1,35 @@
+ #header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  .navbar {
+    padding: 20px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    background: linear-gradient(to right,rgb(35, 209, 209), rgb(5, 55, 163));
+
+    ul {
+      width: 100%;
+      li {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      float: left;
+      }
+
+      li.nav-config {
+        float: right;
+        .fa-cog {
+          color: rgb(100, 100, 139);
+        }
+      }
+    }
+  }
+
+}

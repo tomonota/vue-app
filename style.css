@@ -1,0 +1,6 @@
+body {
+  color: white;
+  background: linear-gradient(to bottom, #020244fd , #083983de 50%, rgb(72, 248, 248));
+  overflow: hidden;
+  margin: 0;
+}
