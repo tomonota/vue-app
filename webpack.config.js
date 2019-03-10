@@ -5,6 +5,7 @@ module.exports = {
   entry: {
     'app': __dirname + '/src/main.js',
     'charts': __dirname + '/src/charts.js',
+    'table': __dirname + '/src/table.js'
   },
   output: {
     path: __dirname + '/build',
